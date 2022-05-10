@@ -3,11 +3,11 @@ import ReactDOM from "react-dom/client";
 import App from "./components/App";
 import "./index.css";
 import { createStore } from "redux";
-import movies from "./reducers";
+import rootReducer from "./reducers";
 
 import reportWebVitals from "./reportWebVitals";
 
-const store = createStore(movies);
+const store = createStore(rootReducer);
 // console.log('store', store);
 // console.log('BEFORE STATE', store.getState());
 
